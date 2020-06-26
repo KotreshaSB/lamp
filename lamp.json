@@ -536,7 +536,8 @@
                                 "mysql-libs": [],
                                 "httpd": [],
                                 "php": [],
-                                "php-mysql": []
+                                "php-mysql": [],
+                                "phpmyadmin":[]
                             }
                         },
                         "files": {
