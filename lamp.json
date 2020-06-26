@@ -537,11 +537,7 @@
                                 "mysql-libs": [],
                                 "httpd": [],
                                 "php": [],
-                                "php-common": [],
-                                "php-mysql": [],
-                                "php-gd": [],
-                                "php-cli": [],
-                                "phpmyadmin": []
+                                "php-mysql": []       
                             }
                         },
                         "files": {
