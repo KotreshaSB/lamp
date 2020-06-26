@@ -531,13 +531,17 @@
                     "Install": {
                         "packages": {
                             "yum": {
+                                "apache2": [],
                                 "mysql": [],
                                 "mysql-server": [],
                                 "mysql-libs": [],
                                 "httpd": [],
                                 "php": [],
+                                "php-common": [],
                                 "php-mysql": [],
-                                "phpmyadmin":[]
+                                "php-gd": [],
+                                "php-cli": [],
+                                "phpmyadmin": []
                             }
                         },
                         "files": {
