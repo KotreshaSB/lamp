@@ -13,7 +13,7 @@
             "DeviceName" : "/dev/sda1",
             "Ebs" : {
               "VolumeType" : "gp2",
-              "Iops" : "24",
+              //"Iops" : "24",
               "DeleteOnTermination" : "false",
               "VolumeSize" : "8"
             }
