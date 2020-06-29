@@ -1,36 +1,40 @@
 {
- "Resources" :
-    {
-    "WebServer":{
- 
-      "Type": "AWS::EC2::Instance",
-         "Properties":{
-         "ImageId" : "ami-0ac80df6eff0e70b5",
-         "KeyName" : "jen",
-         "InstanceType":"t2.micro",
-         "SecurityGroups" :["launch-wizard-1"]
-         
-         }
-        }
-    }
- 
- "Install": {
-                        "packages": {
-                            "apt": {
-                                "mysql": [],
-                                "mysql-server": [],
-                                "mysql-libs": [],
-                                "httpd": [],
-                                "php": [],
-                                "php-mysql": []
-                            }
-                        }
-                        }
-}
- "Outputs":{
-    "WebsiteURL" : {
-      "Value" : { "Fn::Join" : ["", ["http://", { "Fn::GetAtt" : [        "WebServer", "PublicDnsName" ]}]] },
-        "Description" : "URL for newly created LAMP stack"
-   }
- }
+	"Resources": {
+		"WebServer": {
+
+			"Type": "AWS::EC2::Instance",
+			"Properties": {
+				"ImageId": "ami-0ac80df6eff0e70b5",
+				"KeyName": "jen",
+				"InstanceType": "t2.micro",
+				"SecurityGroups": ["launch-wizard-1"]
+
+			}
+		},
+
+
+		"Install": {
+			"packages": {
+				"apt": {
+					"mysql": [],
+					"mysql-server": [],
+					"mysql-libs": [],
+					"httpd": [],
+					"php": [],
+					"php-mysql": []
+				}
+			}
+		},
+
+		"Outputs": {
+			"WebsiteURL": {
+				"Value": {
+					"Fn::Join": ["", ["http://", {
+						"Fn::GetAtt": ["WebServer", "PublicDnsName"]
+					}]]
+				},
+				"Description": "URL for newly created LAMP stack"
+			}
+		}
+	}
 }
