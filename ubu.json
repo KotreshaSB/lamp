@@ -4,7 +4,7 @@
   "Resources" : {
     "MyEC2Instance" : {
       "Type" : "AWS::EC2::Instance",
-      "Properties" : {
+      "Mappings" : {
         "ImageId" : "ami-0ac80df6eff0e70b5",
         "InstanceType" : "t2.micro",
         "KeyName" : "jen",
