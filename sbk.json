@@ -8,7 +8,7 @@
          "ImageId" : "ami-0ac80df6eff0e70b5",
          "KeyName" : "jen",
          "InstanceType":"t2.micro",
-         "SecurityGroups" : [ "launch-wizard-1" ],
+         "SecurityGroups" :["launch-wizard-1"]
          
          }
         }
