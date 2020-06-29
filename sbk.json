@@ -20,6 +20,17 @@
         }
     }
  },
+ "Install": {
+                        "packages": {
+                            "yum": {
+                                "mysql": [],
+                                "mysql-server": [],
+                                "mysql-libs": [],
+                                "httpd": [],
+                                "php": [],
+                                "php-mysql": []
+                            }
+                        },
  "Outputs":{
     "WebsiteURL" : {
       "Value" : { "Fn::Join" : ["", ["http://", { "Fn::GetAtt" : [        "WebServer", "PublicDnsName" ]}]] },
