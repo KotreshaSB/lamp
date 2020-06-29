@@ -15,7 +15,7 @@
               "VolumeType" : "gp2",
               
               "DeleteOnTermination" : "false",
-              "VolumeSize" : "8"
+              "VolumeSize" : "10"
             }
            
           }
