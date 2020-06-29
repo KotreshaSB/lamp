@@ -22,7 +22,7 @@
  },
  "Install": {
                         "packages": {
-                            "yum": {
+                            "apt": {
                                 "mysql": [],
                                 "mysql-server": [],
                                 "mysql-libs": [],
@@ -30,6 +30,7 @@
                                 "php": [],
                                 "php-mysql": []
                             }
+                        }
                         },
  "Outputs":{
     "WebsiteURL" : {
