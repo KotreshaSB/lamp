@@ -11,6 +11,17 @@
 
 			}
 		},
+		"Resources": {
+        "WebServerInstance": {
+            "Type": "AWS::EC2::Instance",
+            "Metadata": {
+                "AWS::CloudFormation::Init": {
+                    "configSets": {
+                        "InstallAndRun": [
+                            "Install",
+                            "Configure"
+                        ]
+                    },
 
 
 		"Install": {
