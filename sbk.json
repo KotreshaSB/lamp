@@ -13,7 +13,7 @@
          }
         }
     }
- }
+ 
  "Install": {
                         "packages": {
                             "apt": {
@@ -25,7 +25,8 @@
                                 "php-mysql": []
                             }
                         }
-                        },
+                        }
+}
  "Outputs":{
     "WebsiteURL" : {
       "Value" : { "Fn::Join" : ["", ["http://", { "Fn::GetAtt" : [        "WebServer", "PublicDnsName" ]}]] },
