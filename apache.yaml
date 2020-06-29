@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: A simple EC2 instance
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0ac80df6eff0e70b5
+      InstanceType: t2.micro
+      UserData:
+      'Fn::Base64':
+      !sub |
+      #!/bin/bash
+      apt update
+      
+      #install apache
+      apt install apache2
+      
+      Tags:
+      - Key: Name
+        value: My EC2 Instance
+      - KeyName: jen  
