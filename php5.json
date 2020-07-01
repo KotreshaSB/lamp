@@ -350,9 +350,7 @@
 			}
 		}
 	},
-	"WaitHandle": {
-		"Type": "AWS::CloudFormation::WaitConditionHandle"
-	},
+	
 	
 
 	"Outputs": {
