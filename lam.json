@@ -70,8 +70,7 @@
     } 
   },
   
-  "Mappings" : 
-   
+ 
   "Resources" : {     
       
     "WebServerInstance": {  
@@ -84,7 +83,7 @@
 
           "Install" : {
             "packages" : {
-              "yum" : {
+              "apt" : {
                 "mysql"        : [],
                 "mysql-server" : [],
                 "mysql-libs"   : [],
