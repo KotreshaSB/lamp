@@ -363,7 +363,7 @@
         "ImageId" : "ami-0ac80df6eff0e70b5",
         "InstanceType"   : "t2.micro",
         "SubnetId" : "subnet-05d6195a",
-        "SecurityGroupIds" : "sg-0e070990f825458fa",
+        "SecurityGroupIds" : {"sg-0e070990f825458fa"},
         "KeyName"        : "jen",
         "UserData"       : { "Fn::Base64" : { "Fn::Join" : ["", [
              "#!/bin/bash -xe\n",
